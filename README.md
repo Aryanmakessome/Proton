@@ -19,3 +19,5 @@ The main goals while building where **To build something that is there 24/7 and 
 
 Build a practical **local-first personal assistant** that can eventually interact with physical systems such as Neutron.
 
+### Note
+Source code is currently private. This repository documents the project's development, architecture, capabilities and demonstrations.
