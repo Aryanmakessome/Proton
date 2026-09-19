@@ -1,0 +1,65 @@
+#---Final Flowchart---
+
+                         ┌─────────────────────┐
+                         │       INPUT 1       │
+                         │                     │
+                         │ YOU → Wakeword/STT  │
+                         │ or direct text      │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │  SEMANTIC ROUTER    │
+                         │     Small LLM       │
+                         │                     │
+                         │ text → known task   │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │      PERFORMER      │
+                         │                     │
+                         │ executes the task  │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                              ┌───────────┐
+                              │           │
+                              │   INPUT   │◄──────────────┐
+                              │ 2 / EVENT │               │
+                              │   QUEUE   │               │
+                              │           │               │
+                              └─────┬─────┘               │
+                                    │                     │
+                                    ▼                     │
+                         ┌─────────────────────┐          │
+                         │    CONFIRMATION     │          │
+                         │                     │          │
+                         │    SAME LLM SERVER  │          │
+                         │                     │          │
+                         │ Short response only │          │
+                         └──────────┬──────────┘          │
+                                    │                     │
+                                    ▼                     │
+                         ┌─────────────────────┐          │
+                         │        TTS          │          │
+                         │       Piper         │          │
+                         └──────────┬──────────┘          │
+                                    │                     │
+                                    ▼                     │
+                                  USER                    │
+                                                          │
+                                                          │
+       ┌──────────────────────┐                           │
+       │      MANAGER         │───────────────────────────┘
+       │                      │
+       │ Python / hardware /  │
+       │ sensors / Neutron /  │
+       │ anything             │
+       │                      │
+       │ "Neutron finished"   │
+       └──────────────────────┘
+
+
+LLM server is a 1.7B or 0.7B qwen model not finallized currently
+We use a LLM model a total of 2 times in normal convos and 1 time when proton requires to just report somthing (future hardware)
