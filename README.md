@@ -19,5 +19,8 @@ The main goals while building where **To build something that is there 24/7 and 
 
 Build a practical **local-first personal assistant** that can eventually interact with physical systems such as Neutron.
 
-### Note
-Source code is currently private. This repository documents the project's development, architecture, capabilities and demonstrations.
+### Source Code
+
+Proton's source code is intentionally kept private.
+This repository contains the project's public documentation, development progress, architecture, flowcharts, and research notes. The actual implementation, models, engines, and local project data are maintained privately.
+
