@@ -19,6 +19,7 @@
 
 Proton can now convert generated text into speech locally and play it through the configured audio output.
 
-### Next
+## 2026-10-05 — Decided to change the main framework to better integrate high level functions
 
-Continue building the Proton core pipeline and integrate TTS with the response system.
+* decided to add complex functions like follow up memory and complex problem solving
+  
