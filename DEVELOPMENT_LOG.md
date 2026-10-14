@@ -30,7 +30,8 @@ Proton's llm finally works and can search the internet and find relevent informa
 (still need opnion and time fixing)
 
 -->Example log
-"""
+
+
 You > nothign find me about the new jantar mantar protest 2.0
 [Proton] Searching the web...
 
@@ -61,4 +62,4 @@ To form your own view, you might want to look at:
 
 Would you like a summary of the specific legal or procedural issues raised by either side?
 
-"""
+
